@@ -7,7 +7,16 @@
 .header {
     text-align: center;
     color: #fff;
-    background-color: #0f7;
+    background-color: #228b22;
     height: 6rem;
     line-height: 6rem;
+}
+
+.shelf_header {
+    padding: 1rem;
+}
+
+.shelf_name {
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    border-bottom: solid 0.1rem #c0c0c0;
 }
