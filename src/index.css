@@ -20,3 +20,10 @@
     padding: 0.5rem 0.5rem 0.5rem 0;
     border-bottom: solid 0.1rem #c0c0c0;
 }
+
+.grid_layout {
+    display: grid;
+    margin: 1rem;
+    padding: 0.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr));
+}
