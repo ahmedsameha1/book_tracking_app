@@ -45,5 +45,17 @@
 
 .book img {
     display: block;
-    margin: 0.5rem auto;
+    margin: 0.5rem auto 1rem auto;
+}
+
+.show_mark {
+    float: right;
+}
+
+span {
+    font-size: 0.8rem;
+}
+
+.hide_mark {
+    display: none;
 }
