@@ -18,21 +18,27 @@ class Shelves extends React.Component {
                 </header>
                 <Grid books={this.state.books.filter( book => {
                     return book.shelf === "currentlyReading";
-                })}/>
+                })} updateShelf={this.updateShelf}/>
                 <header className="shelf_header">
                     <h2 className="shelf_name">Want to Read</h2>
                 </header>
                 <Grid books={this.state.books.filter( book => {
                     return book.shelf === "wantToRead";
-                })}/>
+                })} updateShelf={this.updateShelf}/>
                 <header className="shelf_header">
                     <h2 className="shelf_name">Read</h2>
                 </header>
                 <Grid books={this.state.books.filter( book => {
                     return book.shelf === "read";
-                })}/>
+                })} updateShelf={this.updateShelf}/>
             </div>
         );
+    }
+
+    updateShelf = (id, newShelf) => {
+        (this.state.books.find( book => id === book.id )).shelf = newShelf;
+        this.setState(this.state.books);
+        API.update({id: id}, newShelf);
     }
 }
 

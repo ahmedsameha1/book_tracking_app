@@ -6,10 +6,11 @@ class Book extends React.Component {
         const book = this.props.book;
         return (
             <div className="book">
-                <img src={book.imageLinks.smallThumbnail} alt={book.title}/>
+                    <img src={book.imageLinks.smallThumbnail} alt={book.title}/>
+                    <div className="control">+</div>
                 <p>{book.title}</p>
                 <p className="author">{book.authors[0]}</p>
-                <PopUp shelf={book.shelf}/>
+                <PopUp shelf={book.shelf} updateShelf={this.props.updateShelf} id={book.id}/>
             </div>
         );
     }

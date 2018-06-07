@@ -33,6 +33,7 @@
 }
 
 .book {
+    position: relative;
     padding: 0.5rem;
 }
 .author {
@@ -41,11 +42,16 @@
 
 .book p {
     padding: 0.2rem 0.2rem 0.2rem 0;
+    text-align: center;
 }
 
 .book img {
     display: block;
     margin: 0.5rem auto 1rem auto;
+    /*position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);*/
 }
 
 .show_mark {
@@ -58,4 +64,18 @@ span {
 
 .hide_mark {
     display: none;
+}
+
+.control {
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    background-color: #0f0;
+    color: #f00;
+    border-radius: 50px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(130%, -50%);
 }

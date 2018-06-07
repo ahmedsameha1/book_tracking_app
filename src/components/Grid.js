@@ -6,7 +6,7 @@ class Grid extends React.Component {
         return (
             <div className="grid_layout">
                 {this.props.books.map( book => {
-                    return (<Book key={book.id} book={book} />)}
+                    return (<Book key={book.id} book={book} updateShelf={this.props.updateShelf}/>)}
                 )}
             </div>
         );
