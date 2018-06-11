@@ -22,11 +22,11 @@
 }
 
 .grid_layout {
+    width: 90%;
     display: grid;
     margin: 1rem;
     padding: 0.5rem;
     grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
-    grid-gap: 3rem;
     justify-content: center;
     justify-items: center;
     align-items: center;
@@ -91,4 +91,17 @@ span {
 
 .pop_up_menu_shelf:hover {
     background: #ff8;
+}
+
+.search_button {
+    width: 4rem;
+    height: 4rem;
+    font-size: 3rem;
+    line-height: 4rem;
+    text-align: center;
+    background-color: #6a8c19;
+    border-radius: 50px;
+    position: fixed;
+    right: 2%;
+    bottom: 4%;
 }

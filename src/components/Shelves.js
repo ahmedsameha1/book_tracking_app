@@ -1,6 +1,7 @@
 import React from "react";
 import Grid from "./Grid";
 import * as API from "../BooksAPI.js";
+import { Link } from "react-router-dom";
 
 class Shelves extends React.Component {
     constructor(props) {
@@ -31,6 +32,9 @@ class Shelves extends React.Component {
                 <Grid books={this.state.books.filter( book => {
                     return book.shelf === "read";
                 })} updateShelf={this.updateShelf}/>
+                <Link to="search">
+                    <button className="search_button">+</button>
+                </Link>
             </div>
         );
     }
