@@ -38,3 +38,9 @@ https://www.linkedin.com/pulse/javascript-find-object-array-based-objects-proper
 https://classroom.udacity.com/nanodegrees/nd001/parts/c3e7b0d6-ffef-4421-b5fc-6df10fd0a1ae/modules/82766b2b-1870-4904-aa90-8ccbe63928c5/lessons/14331e60-a548-4cfb-a326-054545da8927/concepts/6e30b216-4065-4c7d-b50b-914dbdf15ec8
 
 https://classroom.udacity.com/nanodegrees/nd001/parts/c3e7b0d6-ffef-4421-b5fc-6df10fd0a1ae/modules/82766b2b-1870-4904-aa90-8ccbe63928c5/lessons/ceb0042f-3e00-4bd2-a1d4-7746ec9c138a/concepts/0147fcd7-284c-4d98-bfb6-baa843a52cd2
+
+https://stackoverflow.com/a/41712245 by:Max Sindwani.
+
+https://medium.learnreact.com/setstate-takes-a-callback-1f71ad5d2296
+
+https://github.com/kriasoft/react-starter-kit/issues/909
