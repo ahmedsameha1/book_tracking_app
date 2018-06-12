@@ -44,3 +44,5 @@ https://stackoverflow.com/a/41712245 by:Max Sindwani.
 https://medium.learnreact.com/setstate-takes-a-callback-1f71ad5d2296
 
 https://github.com/kriasoft/react-starter-kit/issues/909
+
+https://stackoverflow.com/a/3917059 by: user473598.
