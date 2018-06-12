@@ -70,7 +70,7 @@ span {
     width: 2rem;
     height: 2rem;
     line-height: 2rem;
-    background-color: #008000;
+    background-color: #6a8c19;
     color: #fff;
     border-radius: 50px;
     text-align: center;
@@ -94,10 +94,11 @@ span {
 }
 
 .search_button {
-    width: 4rem;
-    height: 4rem;
+    width: 3.5rem;
+    height: 3.5rem;
     font-size: 3rem;
-    line-height: 4rem;
+    line-height: 3.5rem;
+    color: #fff;
     text-align: center;
     background-color: #6a8c19;
     border-radius: 50px;

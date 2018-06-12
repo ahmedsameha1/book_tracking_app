@@ -33,7 +33,7 @@ class Shelves extends React.Component {
                     return book.shelf === "read";
                 })} updateShelf={this.updateShelf}/>
                 <Link to="search">
-                    <button className="search_button">+</button>
+                    <div className="search_button">+</div>
                 </Link>
             </div>
         );
