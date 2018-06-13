@@ -17,18 +17,18 @@ class Book extends React.Component {
             <div className="book" >
                 <div className="img_control_container">
                     <img src={book.imageLinks.smallThumbnail} alt={book.title}/>
-                    <div className="control" onClick={this.toggle_pop_up}>+</div>
-                </div>
-                <div>
-                    <p>{book.title}</p>
-                    <p className="author">{book.authors[0]}</p>
-                </div>
+                    <div className="control" onClick={this.toggle_pop_up}>⋮</div>
                 { this.state.pop_up_shown &&
                     <PopUp shelf={book.shelf}
                     updateShelf={this.props.updateShelf}
                     id={book.id}
                     toggle_pop_up={this.toggle_pop_up}/>
                 }
+                </div>
+                <div>
+                    <p>{book.title}</p>
+                    <p className="author">{book.authors[0]}</p>
+                </div>
             </div>
         );
     }

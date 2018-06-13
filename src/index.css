@@ -56,7 +56,7 @@
 }
 
 .show_mark {
-    float: right;
+    visibility: visible;
 }
 
 span {
@@ -64,20 +64,22 @@ span {
 }
 
 .hide_mark {
-    display: none;
+    visibility: hidden;
 }
 
 .control {
     width: 2rem;
     height: 2rem;
     line-height: 2rem;
+    font-size: 0.6rem;
     background-color: #6a8c19;
     color: #fff;
     border-radius: 50px;
     text-align: center;
     position: absolute;
     right: -10%;
-    bottom: 2%
+    bottom: 2%;
+    user-select: none;
 }
 
 .pop_up_menu {
@@ -86,8 +88,17 @@ span {
     z-index: 1;
     padding: 0.2rem;
     position: absolute;
-    left: 10%;
-    top: 65%;
+    top: 95%;
+    right: 10%;
+    user-select: none;
+}
+
+.pop_up_menu_shelf {
+    text-align: left;
+}
+
+.pop_up_menu_shelf span {
+    padding-left: 0.4rem;
 }
 
 .pop_up_menu_shelf:hover {

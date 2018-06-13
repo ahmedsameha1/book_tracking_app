@@ -46,3 +46,7 @@ https://medium.learnreact.com/setstate-takes-a-callback-1f71ad5d2296
 https://github.com/kriasoft/react-starter-kit/issues/909
 
 https://stackoverflow.com/a/3917059 by: user473598.
+
+https://www.quora.com/How-can-I-hide-an-HTML-element-but-still-have-it-take-up-space-in-the-layout by: Joel Lewenstein.
+
+https://stackoverflow.com/a/4407335 by: Blowsie.
