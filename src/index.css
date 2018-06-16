@@ -26,10 +26,18 @@
     display: grid;
     margin: 1rem;
     padding: 0.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
     justify-content: center;
     justify-items: center;
     align-items: center;
+}
+
+.grid_full {
+    width: 100%;
+}
+
+.grid_layout_not_full {
+    width: 90%;
 }
 
 .book {
@@ -80,6 +88,7 @@ span {
     right: -10%;
     bottom: 2%;
     user-select: none;
+    box-shadow: 0.02rem 0.02rem 0.2rem #6a8c34;
 }
 
 .pop_up_menu {
@@ -117,9 +126,33 @@ span {
     position: fixed;
     right: 2%;
     bottom: 4%;
+    box-shadow: 0.06rem 0.06rem 0.6rem #6a8c34;
 }
 
 .img_control_container {
     position: relative;
     display: inline-block;
+}
+
+.search_bar div,
+.search_bar input {
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.search_bar div,
+.search_bar a {
+    text-align: center;
+    text-decoration: none;
+}
+
+.search_bar input {
+    flex: 1;
+    border: none;
+    padding: 1rem;
+}
+
+.search_bar {
+    display: flex;
+    border-bottom: solid 0.05rem #0f0;
 }

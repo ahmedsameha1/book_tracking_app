@@ -1,5 +1,23 @@
+DESCRIPTION
+===========
+
+This a web app that works with a back-end API to keep track of somebody readings.
+There are three Shelves: currently reading, want to read and read.
+
+HOW TO RUN
+==========
+
+Install npm: https://www.npmjs.com/get-npm
+Download the zip file.
+Extract the zip file.
+Open the extracted directroy using your command prompt.
+Run: npm install
+Run: npm start
+
 ATTRIBUTIONS
 ============
+
+The creation of skeleton by create-react-app: https://github.com/facebook/create-react-app
 
 https://www.google.com.eg/
 
@@ -50,3 +68,15 @@ https://stackoverflow.com/a/3917059 by: user473598.
 https://www.quora.com/How-can-I-hide-an-HTML-element-but-still-have-it-take-up-space-in-the-layout by: Joel Lewenstein.
 
 https://stackoverflow.com/a/4407335 by: Blowsie.
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
+
+https://stackoverflow.com/a/24645869 by: leishman.
+
+https://stackoverflow.com/a/26251334 by: Kailas.
+
+https://stackoverflow.com/a/4775741 by: ChaosPandion.
+
+https://github.com/ReactTraining/react-router/issues/4105 by: yonatanmn.
+
+https://stackoverflow.com/a/45387838 by: Ian Nnyanzi.
