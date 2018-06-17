@@ -3,6 +3,7 @@ import './../App.css';
 import Header from "./Header";
 import Shelves from "./Shelves";
 import Search from "./Search";
+import Error from "./Error";
 import {Switch, Route} from "react-router-dom";
 import * as API from "../BooksAPI.js";
 
@@ -20,6 +21,7 @@ class App extends Component {
             <Switch>
                 <Route exact path="/" render={() => <Shelves books={this.state.books} update_shelf={this.update_shelf} /> }/>
                 <Route path="/search" render={()=><Search books={this.state.books} update_shelf={this.update_shelf} /> }/>
+                <Route component={Error} />
             </Switch>
         </div>
     );
