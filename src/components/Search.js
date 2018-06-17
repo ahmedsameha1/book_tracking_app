@@ -25,28 +25,32 @@ class Search extends React.Component {
             </div>
         );
     }
-    componentDidMount() {
+
+    // https://stackoverflow.com/a/32912570 by: thefourtheye
+    handle_result = (query, results) => {
+        if ( !results.hasOwnProperty("error") ) {
+            results.forEach((result) => {
+                const obj = this.props.books.find((book) => book.id === result.id);
+                if ( obj ) {
+                    result.shelf = obj.shelf;
+                } else {
+                    result.shelf = "none";
+                }
+            });
+            if ( this.value === query ) {
+                this.setState({results});
+            }
+        } else {
+            this.setState({results: []});
+        }
     }
 
     handle_change = (event) => {
         this.value = event.target.value;
         this.setState({search_string: event.target.value,});
         if ( this.value ) {
-            API.search(this.value).then( results => {
-                if ( results !== undefined && results instanceof Array ) {
-                    results.forEach((result) => {
-                        const obj = this.props.books.find((book) => book.id === result.id);
-                        if ( obj ) {
-                            result.shelf = obj.shelf;
-                        } else {
-                            result.shelf = "none";
-                        }
-                    });
-                    if ( this.value ) {
-                        this.setState({results});
-                    }
-                }
-            });
+            // https://stackoverflow.com/a/32912570 by: thefourtheye
+            API.search(this.value).then(this.handle_result.bind(null, this.value))
         } else {
             this.setState({results: []});
         }

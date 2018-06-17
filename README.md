@@ -80,3 +80,9 @@ https://stackoverflow.com/a/4775741 by: ChaosPandion.
 https://github.com/ReactTraining/react-router/issues/4105 by: yonatanmn.
 
 https://stackoverflow.com/a/45387838 by: Ian Nnyanzi.
+
+https://stackoverflow.com/a/32912570 by: thefourtheye.
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
