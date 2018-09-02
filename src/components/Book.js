@@ -1,6 +1,7 @@
 import React from "react";
 import PopUp from "./PopUp";
 import book_image_placeholder from "../img/book_image_placeholder.png";
+import PropTypes from "prop-types";
 
 class Book extends React.Component {
     constructor(props) {
@@ -40,5 +41,10 @@ class Book extends React.Component {
         );
     }
 }
+
+Book.propTypes = {
+    book: PropTypes.object.isRequired,
+    updateShelf: PropTypes.func.isRequired,
+};
 
 export default Book;

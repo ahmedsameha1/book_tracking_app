@@ -1,5 +1,6 @@
 import React from "react";
 import Book from "./Book";
+import PropTypes from "prop-types";
 
 class Grid extends React.Component {
     render() {
@@ -13,5 +14,11 @@ class Grid extends React.Component {
         );
     }
 }
+
+Grid.propTypes = {
+    books: PropTypes.arrayOf(PropTypes.object).isRequired,
+    updateShelf: PropTypes.func.isRequired,
+    grid_full: PropTypes.bool.isRequired,
+};
 
 export default Grid;
