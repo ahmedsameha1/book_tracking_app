@@ -7,7 +7,7 @@
 .header {
     text-align: center;
     color: #fff;
-    background-color: #228b22;
+    background-color: lightslategray;
     height: 6rem;
     line-height: 6rem;
 }
@@ -44,9 +44,10 @@
     position: relative;
     padding: 0.5rem;
     text-align: center;
+    color: #fff;
 }
 .author {
-    color: #808080;
+    color: #fff;
 }
 
 .book p {
@@ -57,10 +58,7 @@
 .book img {
     display: block;
     margin: 0.5rem auto 1rem auto;
-    /*position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);*/
+    box-shadow: 2px 2px 2px lightgray;
 }
 
 .show_mark {
@@ -80,7 +78,7 @@ span {
     height: 2rem;
     line-height: 2rem;
     font-size: 0.6rem;
-    background-color: #6a8c19;
+    background-color: brown;
     color: #fff;
     border-radius: 50px;
     text-align: center;
@@ -88,7 +86,7 @@ span {
     right: -10%;
     bottom: 2%;
     user-select: none;
-    box-shadow: 0.02rem 0.02rem 0.2rem #6a8c34;
+    box-shadow: 0.02rem 0.02rem 0.2rem lightpink;
 }
 
 .pop_up_menu {
@@ -121,12 +119,12 @@ span {
     line-height: 3.5rem;
     color: #fff;
     text-align: center;
-    background-color: #6a8c19;
+    background-color: brown;
     border-radius: 50px;
     position: fixed;
     right: 2%;
     bottom: 4%;
-    box-shadow: 0.06rem 0.06rem 0.6rem #6a8c34;
+    box-shadow: 0.06rem 0.06rem 0.6rem lightpink;
 }
 
 .img_control_container {
@@ -160,4 +158,8 @@ span {
 .error {
     padding: 5rem;
     text-align: center;
+}
+
+.shelves {
+    background-image: url("img/background1.jpg");
 }

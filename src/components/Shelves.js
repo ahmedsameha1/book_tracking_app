@@ -12,7 +12,7 @@ class Shelves extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="shelves">
                 <header className="shelf_header">
                     <h2 className="shelf_name">Currently Reading</h2>
                 </header>
