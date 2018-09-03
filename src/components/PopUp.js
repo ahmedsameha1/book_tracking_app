@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const PopUp = props => {
     const current_book = props.book;
@@ -30,6 +31,12 @@ const PopUp = props => {
             </div>
         </div>
     );
+}
+
+PopUp.propTypes = {
+    book: PropTypes.object.isRequired,
+    updateShelf: PropTypes.func.isRequired,
+    toggle_pop_up: PropTypes.func.isRequired,
 }
 
 export default PopUp;

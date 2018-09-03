@@ -1,6 +1,7 @@
 import React from "react";
 import Grid from "./Grid";
 import * as API from "../BooksAPI.js";
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 class Search extends React.Component {
@@ -55,6 +56,11 @@ class Search extends React.Component {
             this.setState({results: []});
         }
     }
+}
+
+Search.propTypes = {
+    books: PropTypes.arrayOf(PropTypes.object).isRequired,
+    update_shelf: PropTypes.func.isRequired,
 }
 
 export default Search;

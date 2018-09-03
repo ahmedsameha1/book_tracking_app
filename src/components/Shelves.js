@@ -1,5 +1,6 @@
 import React from "react";
 import Grid from "./Grid";
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 class Shelves extends React.Component {
@@ -38,6 +39,11 @@ class Shelves extends React.Component {
         );
     }
 
+}
+
+Shelves.propTypes = {
+    books: PropTypes.arrayOf(PropTypes.object).isRequired,
+    update_shelf: PropTypes.func.isRequired,
 }
 
 export default Shelves;
